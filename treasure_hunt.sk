@@ -1,7 +1,7 @@
 # Create a block that gives a player half a heart when right-clicked
 # For each specific block and specific player, can only be done once
 # Consider custom head /hdb search id:41467
-on right click on diamond block:
+on right click on player head:
 	if {huntstatus.%player%.%location%} is "used":
 		send action bar "&4You used this one already." to player
 	else:
