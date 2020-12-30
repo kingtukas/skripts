@@ -1,0 +1,2 @@
+on right click on gold block:
+	set player's max health to 10

@@ -1,0 +1,5 @@
+on right click on sign:
+	if line 1 of clicked block is "Parkour":
+		teleport player to location(128, 64, -1347)
+	else if line 1 of clicked block is "opsurvival":
+		teleport player to location(8413, 69, -2011)

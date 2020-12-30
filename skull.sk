@@ -1,0 +1,3 @@
+on right click:
+	set {_skullname} to type of clicked block
+	send "You touched a %{_skullname}%" to player

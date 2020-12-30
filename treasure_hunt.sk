@@ -1,0 +1,12 @@
+# Create a block that gives a player half a heart when right-clicked
+# For each specific block and specific player, can only be done once
+# Consider custom head /hdb search id:41467
+on right click on player head:
+	if {huntstatus.%player%.%location%} is "used":
+		send action bar "&4You used this one already." to player
+	else:
+		#increase player's max health by 0.5 hearts
+		set {_playermh} to max health of player
+		set player's max health to {_playermh} + 0.5
+		set {huntstatus.%player%.%location%} to "used"
+		send action bar "&9You gained half a heart max health." to player
